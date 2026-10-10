@@ -573,7 +573,7 @@ const pages = {
   contact() {
     const rows = [
       { ic: ICONS.mail, lbl: "Email", val: PROFILE.email, href: PROFILE.email && "mailto:" + PROFILE.email, ph: "Add your professional email" },
-      { ic: ICONS.linkedin, lbl: "LinkedIn", val: PROFILE.linkedin && PROFILE.linkedin.replace(/^https?:\/\/(www\.)?/, ""), href: PROFILE.linkedin, ph: "Add your LinkedIn URL" }
+      { ic: ICONS.linkedin, lbl: "LinkedIn", val: "View LinkedIn Profile", href: PROFILE.linkedin, ph: "Add your LinkedIn URL" }
     ];
     if (PROFILE.showGithub) rows.push({ ic: ICONS.github, lbl: "GitHub", val: PROFILE.github && PROFILE.github.replace(/^https?:\/\//, ""), href: PROFILE.github, ph: "Add your GitHub URL, or set showGithub to false" });
     return `
