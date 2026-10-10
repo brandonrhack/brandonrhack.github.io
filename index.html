@@ -322,19 +322,19 @@ footer{border-top:1px solid var(--line);padding:28px 0 36px;font-size:14px;color
 const PROFILE = {
   name: "Brandon Hack",
   role: "Electrical Engineering Student at Northeastern University",
-  intro: "I'm most interested in hardware: electronics, robotics, and embedded systems.",
+  intro: "",
   headshot: "",          // image URL or data: URI of your professional headshot (square works best)
-  email: "",             // e.g. "hack.b@northeastern.edu"
-  linkedin: "",          // full URL, e.g. "https://www.linkedin.com/in/..."
+  email: "hack.br@northeastern.edu",             // e.g. "hack.b@northeastern.edu"
+  linkedin: "https://www.linkedin.com/in/brandon-hack-568b8537a/?isSelfProfile=false",          // full URL, e.g. "https://www.linkedin.com/in/..."
   github: "",            // full URL
-  showGithub: true       // set false if you don't have a GitHub
+  showGithub: false       // set false if you don't have a GitHub
 };
 
 const ABOUT = {
-  heading: "Curious. Hands-On. Always Building.",
+  heading: "About Me",
   paragraphs: [
-    "I'm a freshman studying Electrical Engineering at Northeastern University. I chose EE because I want to understand how technology works underneath: what's on the board, how the pieces talk to each other, and why it was designed that way.",
-    "I learn best by building. Putting physical systems together, testing them, and working out why something doesn't behave the way I expected is the part of engineering I enjoy most."
+    "Hi! I am a first-year electrical engineering student at Northeastern University interested in hardware engineering.",
+    "Outside of academics, I enjoy going out with friends, playing pickleball, hiking, traveling, playing video games, skiing, and trying new food. I am interested in cars and learning mroe about them."
   ],
   image: "",     // a professional photo of you, or of something you care about
   outside: []    // paragraphs about your interests and activities outside of school
@@ -345,8 +345,8 @@ const EDUCATION = {
   degree: "Bachelor of Science in Electrical Engineering",
   location: "Boston, MA",
   classYear: "Freshman",
-  graduation: "",       // e.g. "2030"
-  clubs: []             // e.g. ["Club name: what you do"]
+  graduation: "2030",       // e.g. "2030"
+  clubs: ["Northeastern Electric Racing"]             // e.g. ["Club name: what you do"]
 };
 
 /* Add a project by copying one block below. featured:true puts it on the homepage (first 3 shown). */
@@ -511,7 +511,7 @@ const pages = {
         </div>
       </div>
     </div></section>
-
+    <!--
     <section><div class="wrap">
       <div class="section-head"><h2>Outside of school</h2></div>
       <div class="prose" style="max-width:680px">${ABOUT.outside.length
@@ -520,7 +520,7 @@ const pages = {
     </div></section>
     ${inviteBlock()}`;
   },
-
+  -->
   projects() {
     return `
     <div class="wrap page-head">
